@@ -1,0 +1,196 @@
+@import "colors.styl"
+
+input[type=text]::-ms-clear,
+input[type=text]::-ms-reveal,
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+  display none
+
+body
+  font-size 120%
+  background lighten(color-first, 90%)
+  padding 0
+  margin 0
+  color lighten(color-first, -55%)
+  a
+    color lighten(color-first, 20%)
+    &.nostyle
+      color inherit
+      text-decoration none
+
+  .search-box
+    r = 4px
+    margin 0 10px
+    &:hover
+      outline lighten(color-first, 50%) 5px
+    input
+      margin 0
+      border 0
+      height 100%
+      border-bottom-left-radius r
+      border-top-left-radius r
+      &:focus
+        outline 0
+
+    .btn
+      margin-left -5px
+      border-radius r
+      border-bottom-left-radius 0 !important
+      border-top-left-radius 0 !important
+
+  .nav
+    background color-first !important
+    color color-nav-a
+
+    input, button
+      font-size 110%
+
+    .right-nav
+      display inherit
+      align-items center
+      ul
+        width 100%
+        list-style none
+        display flex
+        justify-content space-between
+        li
+          a
+            text-decoration none
+            color color-nav-a
+
+
+    .left-nav
+      display inherit
+      align-items center
+      input
+        margin-right 0
+
+
+    .clear
+      content ""
+      clear both
+
+
+
+
+  .book-info
+    padding-left 0 !important
+    padding-top 0 !important
+    .short-info
+      padding 0 !important
+      img
+        width 100%
+
+    .main-info
+      padding 0 20px
+
+      table
+        th
+          text-align right
+        tr
+          text-align left
+
+
+      .title
+        padding 20px 0
+        h1
+          color lighten(color-first, -50%)
+          margin 0
+        .author
+          color color-first
+        .year
+          color lighten(color-first, 50%)
+
+
+  .page-block
+    max-width 1300px
+    margin 0 auto
+    background color-wrapper
+    margin-bottom 20px
+
+    &.error
+      background lighten(color-first, 70%)
+
+    gen_shadows($n)
+      $value = 1px 1px lighten(color-first, 40%)
+      for $i in 1..$n
+        $value = $value, (($i)px ($i)px lighten(color-first, 40% + $i * 4))
+      return $value
+
+    box-shadow gen_shadows(10)
+    padding 10px 20px 10px 20px
+
+    h2.title
+      margin-top 0
+      color lighten(color-first, -50%)
+      margin-bottom 2px
+
+
+  form
+    &.register
+      *
+        display block
+        margin-bottom 5px
+        font-size 120%
+
+  .footer
+    background color-first
+    display flex
+    justify-content space-between
+    h3
+      color color-nav-a
+      a
+        color color-nav-a
+
+  .btn
+    btn-color = color-first
+    text-decoration none
+    background btn-color
+    color white
+    display inline-block
+    padding 6px
+    border 1px solid white
+    margin-left -4px
+    &:last-of-type
+      border-top-right-radius 8px
+      border-bottom-right-radius 8px
+    &:first-of-type
+      border-top-left-radius 8px
+      border-bottom-left-radius 8px
+    &:hover
+      cursor pointer
+      text-shadow 0 0 2px white
+
+  .badge
+    margin 2px
+    text-decoration none !important
+    &::after
+      font: normal normal normal 14px/1 FontAwesome;
+      content: "\f08e"
+
+  .book-short-info
+    margin-top 5px
+    display flex
+    justify-content left
+    .book-short-info-img
+      height 150px
+      width 150px
+    div
+      margin-right 10px
+    h3, h5
+      margin 0
+    a
+      color inherit
+    h5
+      color lighten(color-first, 50%)
+
+.m-0
+  margin 0
+.mr-5
+  margin-right 5px

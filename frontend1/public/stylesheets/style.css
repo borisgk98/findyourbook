@@ -1,0 +1,127 @@
+body {
+  font-size: 120%;
+  background: #f0e5ff;
+  padding: 0;
+  margin: 0;
+  color: #2e0073;
+}
+body a {
+  color: #8533ff;
+}
+body a.nostyle {
+  color: inherit;
+  text-decoration: none;
+}
+body .nav {
+  background: #60f !important;
+  display: flex;
+  padding: 10px 20px 10px 20px;
+  justify-content: space-between;
+  color: #fff;
+}
+body .nav input,
+body .nav button {
+  font-size: 130%;
+}
+body .nav *:not(:last-child) {
+  margin-right: 20px;
+}
+body .nav .right-nav {
+  display: inherit;
+  align-items: center;
+}
+body .nav .right-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+body .nav .right-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+body .nav .left-nav {
+  display: inherit;
+  align-items: center;
+}
+body .nav .left-nav input {
+  margin-right: 0;
+}
+body .nav .clear {
+  content: "";
+  clear: both;
+}
+body .book-info {
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+}
+body .book-info .short-info {
+  padding: 0 !important;
+}
+body .book-info .short-info img {
+  width: 100%;
+}
+body .book-info .main-info {
+  padding: 0 20px;
+}
+body .book-info .main-info table th {
+  text-align: right;
+}
+body .book-info .main-info table tr {
+  text-align: left;
+}
+body .book-info .main-info .title {
+  padding: 20px 0;
+}
+body .book-info .main-info .title h1 {
+  color: #330080;
+  margin: 0;
+}
+body .book-info .main-info .title .author {
+  color: #60f;
+}
+body .book-info .main-info .title .year {
+  color: #b380ff;
+}
+body .page-block {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: #fcfcfc;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px #a366ff, 1px 1px #a970ff, 2px 2px #af7aff, 3px 3px #b685ff, 4px 4px #bc8fff, 5px 5px #c299ff, 6px 6px #c8a3ff, 7px 7px #ceadff, 8px 8px #d4b8ff, 9px 9px #dac2ff, 10px 10px #e0ccff;
+  padding: 20px;
+}
+body .page-block.error {
+  background: #d1b3ff;
+}
+body .page-block h2.title {
+  margin-top: 0;
+  color: #330080;
+}
+body form.register * {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 120%;
+}
+body .footer {
+  background: #60f;
+  display: flex;
+  justify-content: space-between;
+}
+body .footer h3 {
+  color: #fff;
+}
+body .footer h3 a {
+  color: #fff;
+}
+body .btn {
+  display: inline-block !important;
+  padding: 6px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background: #60f;
+  color: #fff;
+}
+body .btn:hover {
+  cursor: pointer;
+  text-shadow: 0 0 2px #fff;
+}
